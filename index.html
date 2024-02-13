@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasbih</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="container mx-auto my-10">
+    
+<header class=" bg-lime-100 p-5 max-w-[30%] mx-auto rounded-lg hover:bg-lime-300">
+
+    <h1 class="text-2xl lg:text-4xl font-black  text-center ">Digital Tasbih</h1>
+
+</header>
+
+
+
+<main>
+
+<!-- taabih card -->
+
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-20 ">
+
+<div class="py-4 bg-pink-100 opacity-50 flex flex-col items-center space-y-7 rounded-2xl" >
+
+    <h1 class="text-4xl font-extrabold bg-pink-500 text-white p-3 rounded-lg resetColor" id="subHaNaAllahDisplay" >0</h1>
+   <div class="flex flex-none items-center gap-4">
+    <button class="text-2xl btn btn-secondary" onclick="subHaNaAllahPlus()">سُبْحَانَ ٱللَّٰهِ</button>
+    <button class="btn btn-primary text-3xl text-black" id="subHaNaAllahMinus">-</button>
+   </div>
+</div>
+
+
+
+
+
+<div class="py-4 bg-pink-100 opacity-50 flex flex-col items-center space-y-7 rounded-2xl">
+
+    <h1 class="text-4xl font-extrabold bg-pink-500 text-white p-3 rounded-lg resetColor" id="alhadulilahDisplay">0</h1>
+   <div class="flex flex-none items-center gap-4">
+    <button class="text-2xl btn btn-secondary" id="alhadulilah">ٱلْحَمْدُ لِلَّٰهِ</button>
+    <button class="btn btn-primary text-3xl text-black" id="alhadulilahMinus">-</button>
+   </div>
+</div>
+
+
+
+<div class="py-4 bg-pink-100 opacity-50 flex flex-col items-center space-y-7 rounded-2xl">
+
+    <h1 class="text-4xl font-extrabold bg-pink-500 text-white p-3 rounded-lg resetColor" id="AllahHuAkbarDisplay">0</h1>
+   <div class="flex flex-none items-center gap-4">
+    <button class="text-2xl btn btn-secondary" onclick="AllahHuAkbar()">سُبْحَانَ ٱللَّٰهِ</button>
+    <button class="btn btn-primary text-3xl text-black" onclick="AllahHuAkbarMinus()" id="minus">-</button>
+   </div>
+</div>
+
+
+
+</section>
+
+
+<div class="flex items-center justify-center mt-14" >
+    <button class="btn btn-error text-white px-10 font-bold text-2xl" id="reset">Reset</button>
+</div>
+
+</main>
+
+
+
+<footer>
+
+</footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
